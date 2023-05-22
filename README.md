@@ -1,4 +1,0 @@
-# GameOfLife
-
-# RULES
-
