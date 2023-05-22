@@ -1,0 +1,17 @@
+.wrap {
+  width: 22px;
+  height: 22px;
+  border: 1px solid black;
+  transition: all ease-in 0.1s;
+}
+
+.wrap:hover {
+  scale: 1.3;
+}
+
+.wrap[data-value="0"] {
+  background-color: white;
+}
+.wrap[data-value="1"] {
+  background-color: tomato;
+}
