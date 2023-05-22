@@ -8,3 +8,7 @@ if a living cell has two or three living neighbors, then this cell continues to 
    The game is over, if not a single “live” cell remains on the field;
    
    Good luck!
+
+
+
+![Animated_glider_emblem](https://github.com/realUssesss/GameOfLife/assets/100073703/a41d6a36-6593-4e82-a628-4fc2b7d8aef6)
