@@ -23,6 +23,7 @@ export function useCellMachineEngine(
 
   currentGridRef.current = currentGrid;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const onGenerateNext = useCallback(() => {
     const next = generator(currentGridRef.current);
     setCurrentGrid(next);
@@ -79,6 +80,7 @@ export function useCellMachineEngine(
     setCurrentGrid(cur);
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (playing) {
       timerRef.current = setInterval(() => {

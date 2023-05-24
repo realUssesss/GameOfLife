@@ -12,25 +12,23 @@ type Props = {
   onMouseOut: () => void;
 };
 
-export const Cell: FC<Props> = memo(
-  ({
-    data,
-    rowIndex,
-    colIndex,
-    onClickCell,
-    onMouseDown,
-    onMouseOut,
-    onMouseMove,
-  }) => {
-    return (
-      <div
-        onClick={() => onClickCell({ x: rowIndex, y: colIndex })}
-        onMouseDown={onMouseDown}
-        onMouseUp={onMouseOut}
-        onMouseEnter={() => onMouseMove({ x: rowIndex, y: colIndex })}
-        className={style.wrap}
-        data-value={data}
-      ></div>
-    );
-  }
-);
+export const Cell: FC<Props> = ({
+  data,
+  rowIndex,
+  colIndex,
+  onClickCell,
+  onMouseDown,
+  onMouseOut,
+  onMouseMove,
+}) => {
+  return (
+    <div
+      onClick={() => onClickCell({ x: rowIndex, y: colIndex })}
+      onMouseDown={onMouseDown}
+      onMouseUp={onMouseOut}
+      onMouseEnter={() => onMouseMove({ x: rowIndex, y: colIndex })}
+      className={style.wrap}
+      data-value={data}
+    ></div>
+  );
+};
